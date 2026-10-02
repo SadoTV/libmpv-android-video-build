@@ -222,6 +222,17 @@ cpuflags=
 	\
 	--enable-filter=overlay \
 	--enable-filter=equalizer \
+	--enable-decoder=truehd \
+	--enable-decoder=mlp \
+	--enable-parser=av1 \
+	--enable-parser=vp9 \
+	--enable-parser=opus \
+	--enable-parser=mlp \
+	--enable-parser=dvbsub \
+	--enable-parser=dvdsub \
+	--enable-parser=dvd_nav \
+	--enable-demuxer=h264 \
+	--enable-demuxer=mlp \
 	--enable-filter=bwdif \
 	--enable-filter=yadif \
 	\

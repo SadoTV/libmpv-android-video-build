@@ -52,7 +52,7 @@ jobs:
         with:
           draft: false
           prerelease: false
-          tag_name: "sadotv-bwdif-1"
+          tag_name: "sadotv-bwdif-2"
           files: |
             buildscripts/*.zip
             buildscripts/artifacts/**
