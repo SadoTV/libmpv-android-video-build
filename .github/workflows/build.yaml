@@ -39,16 +39,6 @@ jobs:
         run: |
           sudo chmod +x bundle_default.sh
           ./bundle_default.sh
-      - name: Bundle (full)
-        working-directory: ./buildscripts
-        run: |
-          sudo chmod +x bundle_full.sh
-          ./bundle_full.sh
-      - name: Bundle (encoders-gpl)
-        working-directory: ./buildscripts
-        run: |
-          sudo chmod +x bundle_encoders-gpl.sh
-          ./bundle_encoders-gpl.sh
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
@@ -60,9 +50,9 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: github.ref == 'refs/heads/main'
         with:
-          draft: true
+          draft: false
           prerelease: false
-          tag_name: "vnext"
+          tag_name: "sadotv-bwdif-1"
           files: |
             buildscripts/*.zip
             buildscripts/artifacts/**

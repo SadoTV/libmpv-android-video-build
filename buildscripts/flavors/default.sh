@@ -222,6 +222,8 @@ cpuflags=
 	\
 	--enable-filter=overlay \
 	--enable-filter=equalizer \
+	--enable-filter=bwdif \
+	--enable-filter=yadif \
 	\
 	--enable-protocol=async \
 	--enable-protocol=cache \
